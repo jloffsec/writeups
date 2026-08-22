@@ -1,7 +1,7 @@
 # Doctor — Vulnyx
 
 **Dificultad:** Low
-**Plataforma:** [Vulnyx](https://vulnyx.com/) 
+**Plataforma:** [Vulnyx](https://vulnyx.com/)
 **Vector de ataque:** LFI → SSH key cracking → Escritura arbitraria en `/etc/passwd`
 
 ## Resumen
