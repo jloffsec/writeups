@@ -1,3 +1,3 @@
 | Machine | Platform | Difficulty | Techniques | Date |
 |---|---|---|---|---|
-| 01 | Vulnyx | Low | LFI, Cracking | Aug 2026 |
+| [Doctor](Vulnyx/Doctor/README.md) | Vulnyx | Low | LFI, Cracking | Aug 2026 |
