@@ -1,7 +1,9 @@
 # Fing - Vulnyx
 
-**Dificultad:** Low 
-**Plataforma:** [Vulnyx](https://vulnyx.com/) 
+**Dificultad:** Low
+
+**Plataforma:** [Vulnyx](https://vulnyx.com/)
+
 **Autor:** jloffsec
 
 ---
