@@ -188,7 +188,7 @@ chmod +x /tmp/pspy64
 /tmp/pspy64
 ```
 
-![pspy64 output](screenshots/08-pspy64.png)
+![pspy64 output](screenshots/07-pspy64.png)
 
 Detectamos que root ejecuta `/opt/task` cada minuto. Leemos el script:
 
@@ -236,4 +236,4 @@ echo "192.168.1.65 shelly.real.nyx" >> /etc/hosts
 
 Cron se ejecuta.
 
-![Shell root](screenshots/09-shell-root.png)
+![Shell root](screenshots/08-shell-root.png)
