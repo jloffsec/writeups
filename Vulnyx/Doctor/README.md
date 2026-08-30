@@ -116,7 +116,6 @@ ssh -i id_rsa admin@192.168.1.79
 
 Éxito en la autenticación consigo shell como `admin`.
 
-**Flag de usuario:** `0819e6dfb35db7c61353e4dce311b397`
 
 ## Escalada de privilegios
 
@@ -164,7 +163,6 @@ id
 ```
 ![Acceso root](screenshots/07-root-access.png)
 
-**Flag de root:** `dfde8cc67ed8819b2386dc74e472ecc6`
 
 ## Soluciones
 

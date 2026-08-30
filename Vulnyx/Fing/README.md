@@ -126,7 +126,6 @@ ssh adam@192.168.1.144
 
 Acceso confirmado como usuario `adam`.
 
-**Flag de usuario:** `ff18a9aca2d1dac41a5c26e6667bea9d`
 
 ---
 
@@ -186,7 +185,6 @@ doas /usr/bin/find . -exec /bin/sh \; -quit
 
 Shell obtenida como `root`.
 
-**Flag de root:** `1edf2dfe68c6745e93affa42be9a80ce`
 
 ---
 
