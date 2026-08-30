@@ -4,7 +4,7 @@
 
 **IP objetivo:** 172.17.0.2
 
-**Dificultad:** Easy
+**Dificultad:** Very easy
 
 ---
 
