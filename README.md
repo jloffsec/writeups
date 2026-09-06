@@ -6,5 +6,5 @@
 | [Real](Vulnyx/Real/README.md) | Vulnyx | Low | UnrealIRCd backdoor, cron /etc/hosts | Aug 2026 |
 | [Trust](Dockerlabs/Trust/README.md) | Dockerlabs | Very easy | SSH bruteforce, sudo vim privesc | Aug 2026 |
 | [Tproot](Dockerlabs/Tproot/README.md) | Dockerlabs | Very easy | vsFTP 2.3.4 backdoor | Aug 2026 |
-| [Obsession](Dockerlabs/Obsession/README.md) | Dockerlabs | Very easy | SSH bruteforce, sudo vim privesc | Aug 2026 |
-| [Vacaciones](Dockerlabs/Vacaciones/README.md) | Dockerlabs | Very easy | *** | Sept 2026 |
+| [Obsession](Dockerlabs/Obsession/README.md) | Dockerlabs | Very easy | SSH bruteforce, sudo vim privesc | Sept 2026 |
+| [Vacaciones](Dockerlabs/Vacaciones/README.md) | Dockerlabs | Very easy | SSH bruteforce + ruby sudo privesc | Sept 2026 |
