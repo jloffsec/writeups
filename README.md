@@ -9,3 +9,5 @@
 | [Obsession](Dockerlabs/Obsession/README.md) | Dockerlabs | Very easy | SSH bruteforce, sudo vim privesc | Sept 2026 |
 | [Vacaciones](Dockerlabs/Vacaciones/README.md) | Dockerlabs | Very easy | SSH bruteforce + ruby sudo privesc | Sept 2026 |
 | [BorazuwarahCTF](Dockerlabs/BorazuwarahCTF/README.md) | Dockerlabs | Very easy | Exif data leak + sudo bash privesc | Sept 2026 |
+| [Invernadero](Hackmyvm/Invernadero/README.md) | Hackmyvm | Easy | SSTI (Jinja2) → RCE → Credential Reuse → Cron Privilege Escalation | Sept 2026 |
+| [Encrypt](Hackmyvm/Encrypt/README.md) | Hackmyvm | Easy | Credentials exposed in TLS certificate CN → SSH access → setuid capability on Ruby binary | Sept 2026 |
